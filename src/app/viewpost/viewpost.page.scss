@@ -1,0 +1,99 @@
+/* Custom CSS for the dashboard */
+
+/* Reduce the size of the image */
+ion-card img {
+  
+    max-width: 100%;  
+    height: auto;  
+    
+}
+
+/* Adjust the size and color of the icons */
+ion-icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Style the input field */
+ion-input {
+  width: 150px;
+  margin-left: 10px;
+}
+
+/* Center the footer buttons */
+ion-footer ion-grid ion-row ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Adjust the size of the footer buttons */
+ion-footer ion-button {
+  width: 80%;
+}
+
+/* Style the toolbar and title */
+ion-toolbar {
+  --ion-background-color: #f8f8f8;
+  --ion-color-primary: #333;
+}
+
+ion-title {
+  font-weight: bold;
+}
+
+/* Adjust the size of the close icon */
+ion-card-header ion-icon[name="close-circle"] {
+  font-size: 24px;
+}
+
+/* Style the post title */
+ion-card-header span {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Style the post content */
+ion-card-content b {
+  font-weight: normal;
+}
+
+/* CSS for comment box */
+.comment-box {
+  display: none;
+}
+
+.comment-box.open {
+  display: block;
+}
+
+/* CSS for comment icon */
+.comment-icon {
+  color: blue; /* Change color as needed */
+  cursor: pointer;
+}
+
+.comment-icon:hover {
+  color: red; /* Change hover color as needed */
+}
+
+/* CSS for comment card */
+.comment-card {
+  margin-top: 10px;
+}
+
+
+.comment-textarea {
+  width: 100%;
+  height: 100px; 
+}
+
+
+.comment-submit-button {
+  margin-top: 10px;
+}
+
+ 

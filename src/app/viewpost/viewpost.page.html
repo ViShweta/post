@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>viewpost</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button icon="home" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+  <ion-card *ngFor="let post of posts">
+    
+    <ion-card-header>
+      <ion-reorder ></ion-reorder>
+      <img [src]="post.image" height="200" width="200">
+    </ion-card-header>
+    <ion-card-content>
+      <div style="display: flex; justify-content: space-between;">
+        <span style="color: blue">
+          <p><strong>Title:</strong> {{ post.title }}</p>
+        </span>
+          <ion-icon name="close-circle" (click)="removePost(post)"></ion-icon>
+      </div>
+      <p><strong>Content:</strong> <b>{{ post.content }}</b></p>
+    </ion-card-content>
+   
+  </ion-card>
+</ion-reorder-group>
+</ion-content>
